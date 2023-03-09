@@ -28,7 +28,7 @@ boden_h = (cube_a-cool_h)/2;
 cube_i = cube_a-2*rip_b-2*cube_d;
 
 //Was soll gezeigt werden?
-item="trayThinker.stl";
+item="rear.stl";
 print(item);
 
 //Select the item to print
@@ -117,10 +117,10 @@ module trayThinker(){
 module tray32u4(){
     cubebevel(cube_i-0.4,schienen_l,2,rand);
     translate([0,-(schienen_l-2)/2,2])cube([60,2,2],center=true);
-    translate([-11,-42,1]) nupsi(5,6,2.4);
-    translate([37,-42,1]) nupsi(5,6,2.4);
-    translate([4,8.5,1]) nupsi(5,6,2.4);
-    translate([32,8.5,1]) nupsi(5,6,2.4);
+    translate([-11,-43,1]) nupsi(5,6,2.4);
+    translate([37,-43,1]) nupsi(5,6,2.4);
+    translate([4,7.5,1]) nupsi(5,6,2.4);
+    translate([32,7.5,1]) nupsi(5,6,2.4);
 }
 
 //Tray for the iCE40HX8K-EVB
@@ -144,9 +144,9 @@ module nupsi(h,a,i){
 //rear part of cube
 module rear(){
     translate([0,0,(cool_h+boden_h-boden_d)/2])
-        rahmen(cube_a,cube_i+2*cube_d,boden_h-boden_d,rand);
+        rahmen(cube_a,cube_i+2*cube_d+0.1,boden_h-boden_d,rand);
     translate([0,0,(cool_h-rip_d)/2])
-        rahmen(cube_a-2*rip_l,cube_i+2*cube_d,rip_d,0);
+        rahmen(cube_a-2*rip_l,cube_i+2*cube_d+0.1,rip_d,0);
     translate([0,0,cube_a/2-boden_d/2])
     difference(){
         bodenplatte();
