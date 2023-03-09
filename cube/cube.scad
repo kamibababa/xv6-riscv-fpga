@@ -64,7 +64,7 @@ module logo_plate(){
     
 //The cube logo with an X
 module logo(laenge){
-    dicke=laenge*0.133;
+    dicke=laenge*0.14;
     translate([0.05*laenge,0.2*laenge,0])rotate(28)
     union(){
         //The X
@@ -110,7 +110,7 @@ module traySDCard(){
 module trayThinker(){
     cubebevel(schienen_a-2*schienen_d-0.4,schienen_l,2,rand);
     translate([0,-(schienen_l-2)/2,2]) cube([40,2,2],center=true);
-    translate([0,-10,1])rotate(90)scale(0.28)import("thinker.stl", convexity = 5);
+    translate([0,-26,1])rotate(90)scale(0.33)import("thinker.stl", convexity = 5);
 }
 
 //Tray for Olimexino 32u4
@@ -200,7 +200,7 @@ module front(){
     translate([0,0,(-cool_h+rip_d)/2])
         rahmen(cube_a-2*rip_l,cube_i,rip_d,0);
     difference(){
-        rahmen(cube_a-2*rip_b,cube_i,cube_a-2*boden_d,rand);
+        rahmen(cube_a-2*rip_b-0.2,cube_i,cube_a-2*boden_d,rand);
         beveltop(cube_a-2*rip_b,cube_a-2*rip_b,cube_a-2*boden_d,rand);
     }
     //Bodenplatte
