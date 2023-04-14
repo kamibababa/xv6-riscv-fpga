@@ -1,0 +1,61 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Sat Apr  8 09:41:45 2023
+[*]
+[dumpfile] "/home/micha/gitlab/xv6-riscv-fpga/fpga_ice/soc_tb.vcd"
+[dumpfile_mtime] "Sat Apr  8 09:37:14 2023"
+[dumpfile_size] 107370872
+[savefile] "/home/micha/gitlab/xv6-riscv-fpga/fpga_ice/soc_tb.gtkw"
+[timestart] 112040
+[size] 1920 953
+[pos] -27 -24
+*-4.000000 112095 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] soc_tb.
+[treeopen] soc_tb.SOC.
+[sst_width] 297
+[signals_width] 166
+[sst_expanded] 1
+[sst_vpaned_height] 282
+@28
+soc_tb.tx
+soc_tb.SOC.addr_is_bram
+@22
+soc_tb.SOC.sba_dat_r[31:0]
+soc_tb.SOC.sba_dat_w[31:0]
+@28
+soc_tb.SOC.sba_ack
+@22
+soc_tb.SOC.sba_addr[31:0]
+soc_tb.SOC.sba_dat_w[31:0]
+@200
+-SDRAM
+@29
+soc_tb.SOC.sba_ack
+@28
+soc_tb.SOC.sba_stb
+@22
+soc_tb.SOC.sba_we[3:0]
+@28
+soc_tb.SOC.sdram_stb
+soc_tb.SOC.sdram_ack
+soc_tb.SOC.sdram_busy
+@22
+soc_tb.SOC.sdram_dat_r[31:0]
+@28
+soc_tb.SOC.sdram_stb
+@22
+soc_tb.SOC.SDRAM_ADDR[12:0]
+@28
+soc_tb.SOC.SDRAM_BA[1:0]
+soc_tb.SOC.SDRAM_CAS
+soc_tb.SOC.SDRAM_CKE
+soc_tb.SOC.SDRAM_CLK
+soc_tb.SOC.SDRAM_CS
+soc_tb.SOC.SDRAM_DQM[1:0]
+@22
+soc_tb.SOC.SDRAM_D[15:0]
+@28
+soc_tb.SOC.SDRAM_RAS
+soc_tb.SOC.SDRAM_WE
+[pattern_trace] 1
+[pattern_trace] 0
