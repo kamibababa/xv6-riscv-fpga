@@ -506,7 +506,7 @@ vma VMA(
 	.i_p_dat_r(i_dat_r),
 	.i_satp(csr_satp),
 	.i_smode(~privileged_mode[1]),
-	.i_sfence_vma(instr_SFENCE_VMA),
+	.i_sfence_vma(instr_SFENCE_VMA|(csr_write & sel_satp)),
 	.o_exception(exception_page_fault)
 );
 
